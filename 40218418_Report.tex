@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt]{report}
+\documentclass[a4paper,12pt]{article}
 \usepackage[margin=1.00in]{geometry}
 \usepackage{hyperref}
 \usepackage{xurl}
@@ -13,62 +13,85 @@
 \usepackage[table]{xcolor}
 \usepackage{algpseudocode}
 \usepackage{tabularx}
+% Remove the red boxes around links
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black, % You can change link colors to your preference
+    citecolor=blue, % You can change citation colors to your preference
+    urlcolor=black % You can change URL colors to your preference
+}
 \begin{document}
 \begin{titlepage}
    \begin{center}
-       \vspace*{-8ex}
+        \vspace*{-8ex}
         \begin{figure}[h!]
   \centering
 \end{figure}
-
-       \textbf{\large TOPIC ANALYSIS AND SYNTHESIS }\\[0.3in]
+          \includegraphics{Concordia-logo.jpeg} \\[0.2in]
+       \textbf{\large SOEN 6841 : TOPIC ANALYSIS AND SYNTHESIS REPORT}\\[0.3in]
         \textbf{\large Why a Good Boss Likes It When People Complain} \\ [0.3in]
-        \textbf{\large Prepared By} \\[0.1in]
-        \normal Umang Patel(40218418)\\[0.3in]
-       
+    
+        \textbf{\large  Prepared By}\\[0.15in]
+         {\centering Umang Patel(40218418)\\[0.4in]}
 
         \textbf{\large Under the Guidance of}\\[0.15in]
-        \normal Prof. Pankaj Kamthan\\[0.4in]
-
+        {\centering Prof. Pankaj Kamthan\\[0.4in]}
         \textbf{\large Submitted to}\\[0.15in]
-        \normal CONCORDIA UNIVERSITY\\[0.05in]
-        \normal DEPARTMENT OF COMPUTER SCIENCE AND SOFTWARE ENGINEERING\\[0.2in]
-        \includegraphics{Concordia-logo.jpeg}
+        {\centering CONCORDIA UNIVERSITY\\[0.1in]} 
+        {\centering DEPARTMENT OF COMPUTER SCIENCE AND SOFTWARE ENGINEERING\\[0.2in]}
+      
 
        \vspace{1.0cm}
       
-        \textbf{Github:}\\\\url{https://github.com/Umang070/SOEN-6841-TAS}\\[0.2in]
-    
+        \textbf{Github:}\\\url{https://github.com/Umang070/SOEN-6841-TAS}\\[0.5in]
+        {\centering  \large November 30, 2023 \par}
        \vfill
-      % \vspace{0.2cm}
    \end{center}
 \end{titlepage}
 
-% Remove chapter number from section numbering
 \renewcommand{\thesection}{\arabic{section}}
 \tableofcontents
 
 \newpage
-\section{Abstract}
-The article focuses on the positive impact of complaints on bosses and organizations, underscoring the beneficial aspects of welcoming and addressing grievances within a workplace environment. The complaint here is a trust-based mechanism of highlighting the secret issues, and giving them implicit message feedback. Moreover, complaints also show what value an individual has and that helps managers to line up their leadership with team objectives. Complaints are highlighted as a vital means of addressing conflicts, which is presented as a coaching opportunity to help individuals on the teams develop empowerment traits\cite{case_study}. Complaints, as described above are instrumental in giving comprehensive pictures of both short-term problems and long-term barriers and as such, serve to widen management's point of view\cite{case_study}. The study shows enhanced positive emotions and the long-term effect of leadership behaviors on employee well-being by suggesting that employees' emotional regulation, when supported by transformational leaders, reduces the negative effects on job satisfaction and stress\cite{workplace_emotions}. In summary, the findings provide useful information about present and future problems thus expanding the managerial vision. The article suggests an even-handed way of handling complaints so as to stop poisoning the team.
+\section*{Abstract}
+\addcontentsline{toc}{section}{Abstract}
+The article focuses on the positive impact of complaints on bosses and organizations, underscoring the beneficial aspects of welcoming and addressing grievances within a workplace environment. The complaint here is a trust-based mechanism of highlighting the secret issues, and giving them implicit message feedback. Moreover, complaints also show what value an individual has and that helps managers to line up their leadership with team objectives. Complaints are highlighted as a vital means of addressing conflicts, which is presented as a coaching opportunity to help individuals on the teams develop empowerment traits. A high level of conflict management not only directly impacts team cohesion but also alters the negative and positive effects of relationship conflict and task conflict, respectively, on team cohesion\cite{conflict_management}.
+\\\\
+Complaints, as described above are instrumental in giving comprehensive pictures of both short-term problems and long-term barriers and as such, serve to widen management's point of view. The study shows enhanced positive emotions and the long-term effect of leadership behaviors on employee well-being by suggesting that employees' emotional regulation, when supported by transformational leaders, reduces the negative effects on job satisfaction and stress\cite{workplace_emotions}. In summary, the findings provide useful information about present and future problems thus expanding the managerial vision. Complaining can help us to build empathy, and social connection with others, and lead to positive change\cite{benefits_complain}.
 \newpage
 \section{Introduction}
-The case study offers a new insight into complaints within the workplace by re-framing the generally negative view. This implies that complaints act like witnesses of confidence between employees who embrace problems with dignity, and help in resolving conflicts among teams by revealing hidden sides of personalities. The insight of Huston goes into transformational power in complaints which are not treated as disruption but opportunities for training, expanding managerial scope, and coaching opportunities\cite{case_study}. 
+This case study explores the multifaceted benefits of complaints in a workplace, emphasizing how they serve as a trust-based avenue for problem-solving, enhancing communication, managerial improvement, and constructive improvements.
 
-\subsection{Motivation}
-Investigating why a good boss values employee complaints is because of the awareness of how this understanding can change work relations and management approaches. Complaints are commonly raised in organizations and leadership and communication, thus they indicate an opportunity to make meaningful improvements if approached proactively. Explore associations between employee empowerment and interpersonal trust in managers\cite{employee_manager}. The purpose of this investigation is to promote constructive changes in the work culture environment, pointing out how having such a culture that accepts complaints and resolves them will result in improved organizational achievement among workers.    
 
 \subsection{Problem Statement}
-The primary issue examined in the work revolves around the difficulty associated with making open criticisms at work, thus failing to promote a conducive atmosphere for creative suggestions. The author is aware that complaints are an important trust measure through which issues get identified and solved while employees share their experiences with other people. However, the problem stems from the general reluctance of individuals to voice out their complaints. Hesitation toward team dynamics acts as an obstacle to revealing important organizational problems, discovering individual preferences, and tackling team conflicts. In simple terms, the problem statement addresses how to promote a conducive atmosphere where employees raise their concerns, which in turn leads to better relationships among teams, good supervision, and general job contentment.
+The fundamental focus of this investigation is to evaluate the impact and effectiveness of complaints as an essential source of information within the workplace context. 
+\begin{itemize}
+    \item In what ways do complaints function as a crucial trust measure for complaint identification and resolution, while also serving as a platform for employees to share their experience of complaints with others?\cite{employee_manager}
+    \item How much does the general reluctance of individuals to openly express criticisms at the workplace?
+    \item What risks are associated with complaining about one's boss, considering the boss's influence on various aspects?\cite{complain_boss}
+    \item How do complaints contribute to the workplace decision-making processes, feedback mechanisms, valuable indicators of employee sentiments, and potential areas for improvement?
+    \item How does hesitancy within team dynamics act as an obstacle to uncovering significant organizational issues, understanding individual preferences, and effectively addressing team conflicts?\cite{employee_silence}
+\end{itemize}
+
+
+\subsection{Motivation}
+Investigating why a good boss values employee complaints is because of the awareness of how this understanding can change work relations and management approaches. Explore associations between employee empowerment and interpersonal trust in managers\cite{employee_manager}. The motivation behind this investigation is to explore how a good boss can leverage complaints as opportunities for positive change, empathy building, conflict resolution, identifying problems, and broadening perspective.\cite{complain_boss}.    
+
 
 \subsection{Objectives}
-This study seeks to understand reasons for good employers welcoming employee’s complaints making them useful in resolving conflicts, enhancing communications in workplaces, and improving working relationships. The research explores the motivation behind a boss accepting complaints in order to establish that adopting and solving problems can build trust, trigger proactive management, and give a good working environment. This investigation intends to provide information for both managers and employees on how better leadership practices can be developed to improve teams’ performance as well as employee satisfaction. Managers and team members need to build a trusting relationship with each other, which will help them resolve any complaints they may have towards one another. The purpose of this investigation is to adopt a qualitative approach to understand and transform complaints as opportunities which beneficial to the health of an overall organization system\cite{complaint_to_opportunities}.
+The primary objective of this case study is to understand reasons for good employers welcome employee’s complaints making them useful in resolving conflicts, enhancing communications in workplaces, and improving working relationships.
+\begin{itemize}
+    \item Provide recommendations and measures that firms can adopt to minimize the likelihood of opportunistic complaining, especially in large corporate structures\cite{opportunistic_complain}. 
+    \item Offering insights to managers on enhancing leadership practices in order to elevate team performance and foster employee satisfaction.
+    \item Adopt a qualitative approach to understand and transform complaints as opportunities which beneficial to the health of an overall organization system\cite{complaint_to_opportunities}.
+\end{itemize}
+
 
 \newpage
 \section{Background Material}
-Cate Huston's case study, "Why a Good Boss Likes It When People Complain," researches the intricate dynamics of workplace complaints, challenging conventional perspectives. It explores the cultural context where complaints aren't only a common occurrence but are regarded as valuable resources.  Rooted in the British culture of complaint, the study explores how embracing complaints can serve as a catalyst for positive change within organizations. The study unfolds against the backdrop of Brexit, providing rich ideas for understanding how complaints act as trust-building mechanisms. By uncovering the layers of complaining,  the narrative reveals their crucial role in exposing hidden problems, understanding team values, and resolving conflicts. This background sets the stage for a comprehensive analysis of how complaints, often viewed negatively, can be transformative tools in fostering a healthier and more productive work environment.
+The case study researches the intricate dynamics of workplace complaints, challenging conventional perspectives. It explores the cultural context where complaints aren't only a common occurrence but are regarded as valuable resources.  Rooted in the British culture of complaint, the study explores how embracing complaints can serve as a catalyst for positive change within organizations. The study unfolds against the backdrop of Brexit, providing rich ideas for understanding how complaints act as trust-building mechanisms. By uncovering the layers of complaining,  the narrative reveals their crucial role in exposing hidden problems, understanding team values, and resolving conflicts.  Real-world challenges employees can face as a boss can influence various aspects of an employee's professional life\cite{complain_boss}.
 
-\subsection{ Why Complain? Complaints, Compliance in the Workplace}
+\subsection{Why Complain? Complaints, Compliance in the Workplace}
 The study highlights how important worker complaints are in influencing and motivating enforcement actions, particularly at organizations like OSHA and WHD. The report underscores the importance of resource constraints, demonstrating how complaints and feedback have become a major factor as evidenced by the significant number of complaint inspections in the WHD's 2004 regulatory activities \cite{why_complaints}. 
 \subsection{Feedback importance on individual and team processes}
 Feedback plays a crucial role in influencing employee performance as it reflects employees' satisfaction with the environment, learning, commitment to work, and challenges faced while working as a group \cite{feedback_importance}. It can also identify areas of improvement and strengthen the team processes as supported by correlations which indicate a positive relationship between feedback and team processes. 
@@ -76,15 +99,15 @@ Feedback plays a crucial role in influencing employee performance as it reflects
 The study addresses the common problem of workers being hesitant to report organizational problems to managers. The research uncovers the kind of operational difficulties in which employees are reluctant to speak up as they do not feel comfortable speaking to those above them about any concerns. \cite{employee_silence}. 
 \newpage
 \section{Methods and Methodology}
+The procedure entailed highlighting important takeaways, ideas, as well as management points of view concerning the gains of complaints that draw from personal and professional experiences. The research involved an interpretive approach to identify the implicit significance and consequences.
 
-\subsection{Design/Approach}
-
-The procedure entailed highlighting important takeaways, ideas, as well as management points of view concerning the gains of complaints that draw from personal and professional experiences shared by Amy Yeager. The research involved an interpretive approach to identify the implicit significance and consequences.  
-
+\subsection{Navigating Complaints: A Transformative Process }
 \begin{itemize}
     \item \textbf{Recognizing and Understanding Complaints}: Recognizing complaints by detecting the tone of voice and understanding the underlying motivations is crucial for effective response strategies.  The tone, often whining, frustrated, or resentful, serves as a key indicator\cite{complaint_to_opportunities}.  By analyzing complaints, one might gain an understanding of how hidden demands or wishes contribute to complaints, and how their emotional overtones which are frequently burdensome cause inappropriate responses.
     \item \textbf{Transforming Complaints}: Two main questions are asked as part of the transformative aspect: What does the person need or want? What steps can be taken to ensure that occurs? The approach recommends continuing to be attentive and inquiring rather than jumping to conclusions in order to change one's perspective \cite{complaint_to_opportunities}. People are encouraged to consider their own complaints, identify their needs and goals, and consider taking proactive measures, all of which operate as significant role models for the larger team and organization.
 \end{itemize}
+\subsection{Strategic Dimensions of Complaint Management}
+Explore the customer-centric, firm-centric, and relationship-centric determinants of complaining as it can be useful in understanding the factors influencing the nature of complaints. This may provide insights into the risks and drawbacks associated with certain responses to complaints\cite{opportunistic_complain}. Establish transparent communication channels that provide employees with various platforms to express complaints and utilize both formal and informal channels, such as regular team meetings, suggestion boxes, and anonymous feedback systems\cite{benefits_complain}. The company can introduce incentive programs for employees who contribute valuable insights through their complaints and publish success stories where complaints have led to positive changes.
 
 
 \subsection{Techniques for Analysis}
@@ -97,38 +120,43 @@ The techniques used in the assessment included thematic analysis that aimed at i
     \item Drawing on interviews with 40 employees,  findings reveal a common subject among employees who refrained from voicing their concerns, emphasizing the fear of negative perceptions or labels and the subsequent risk of damaging valuable relationships as the primary reason for not complaining\cite{employee_silence}.
     \item The study, conducted in a Korean public organization with 482 employees, revealed that managerial coaching had an indirect influence on satisfaction with work, career commitment, organization commitment, and job performance \cite{managerial_coaching}. These results provide insights for practitioners to select and develop effective managers and leaders and understand and manage employee attitudes and behaviors in organizations.
     \item An online survey of 2000 salaried employees highlights how increments in empowerment and trust can mitigate the effects of organizational complexity, reduce transaction costs, strengthen relational systems within broader organizational structures, and diminish the need for supervisory oversight, ineffective controls, and measurement systems that negatively impact productivity\cite{employee_manager}.
+    \item  Large firms are more susceptible to complaining and greed is identified as a primary determinant of certain forms of deviant employee behavior, including complaining. Employees perceive that the costs associated with large corporate structures are insignificant, contributing to increased opportunistic behavior\cite{opportunistic_complain}.
+    \item Explore surprising research from the Journal of Personality and Social Psychology, suggesting that complaining can serve as a catalyst for positive change and helps individuals to build empathy and strengthen social connections\cite{benefits_complain}.
 \end{enumerate}
 
 
 \newpage
-\section{Recommendations}
-After a comprehensive analysis of the case study, several key recommendations emerge to enhance the positive aspects of complaints within a managerial context. Implementing these recommendations can contribute to creating a workplace where complaints are viewed as valuable tools for improvement, fostering trust, and enhancing overall organizational effectiveness.
+\section{Conclusion and Future Work}
 
+\subsection{Recommendations}
 \begin{enumerate}
     \item Foster a Complaint-Friendly Culture:
 Encourage an environment where employees can freely express their concerns without fear of reprisal. Providing open communication channels, undertaking regular feedback sessions, and implementing clear mechanisms for handling conflicts will assist in achieving this.
 
     \item Provide Training on Effective Feedback:
-Introduce training programs that focus on giving helpful feedback. This can help both managers and team members to convert negative comments into growth avenues, making sure that they contribute to organizational improvements.
+Introduce training programs that focus on giving helpful feedback. This can help both managers and team members to convert negative comments into growth avenues, making sure that they contribute to organizational improvements\cite{feedback_importance}.
 
     \item Regularly Assess Organizational Climate:
 Periodically assess organizational climate, how employees feel about it, and their communication abilities and satisfaction. A more proactive approach can even identify potential problems in advance and thus contribute to creating a better working environment.
 
     \item Establish Clear Conflict Resolution Protocols:
-Create effective systems of conflict resolution when it comes to complaints. A structured process ensures that conflicts are resolved promptly, fairly, and in an aligned manner with organizational values.
+Create effective systems of conflict resolution when it comes to complaints. A structured process ensures that conflicts are resolved promptly, fairly, and in an aligned manner with organizational values\cite{conflict_management}.
 \end{enumerate}
+\subsection{Future Work}
+Developing and evaluating training programs for managers to improve their ability to handle complaints. Assessing the effects of such programs on managerial effectiveness, team cohesion, and the general workplace environment\cite{feedback_importance}.
+Understanding the combined role of leadership and supervision in cultivating a culture that encourages constructive feedback. Exploring leadership and supervision behaviors and practices that contribute to transparent and communicative work environment\cite{workplace_emotions}.Exploring the integration of technology to improve the efficiency of the feedback procedure. Investigating tools or platforms that enable employees to express their concerns in a structured and confidential manner, ensuring a more efficient resolution process.
+\subsection{Conclusion}
+In summary, the case study highlights the transformative potential of complaints at the management level. Embracing complaints as valuable sources of feedback, trust-building, growth, and conflict resolution challenges conventional perspectives. The insights emphasize the importance of fostering a complaint-friendly culture where members can communicate freely, understand team values, and give constructive feedback. By acknowledging the role of complaints as opportunities for positive change and shaping a healthy work environment, organizations can support a culture of transparency, trust, and long-term organizational success\cite{benefits_complain}. Implementing the mentioned recommendations can contribute to creating a workplace where complaints are viewed as valuable tools for improvement, fostering trust, and enhancing overall organizational effectiveness.
 
 \newpage
-\section{Conclusion}
-In summary, the case study highlights the transformative potential of complaints at the management level. Embracing complaints as valuable sources of feedback, trust-building, growth, and conflict resolution challenge conventional perspectives. The insights emphasize the importance of fostering a complaint-friendly culture where members can communicate freely, understand team values, and give constructive feedback. By acknowledging the role of complaints as opportunities for positive change and shaping a healthy work environment, organizations can support a culture of transparency, trust, and long-term organizational success.
+\section{Acknowledgements}
+I want to express my sincere appreciation to ChatGPT and Grammarly for their invaluable assistance in paraphrasing my sentences and ensuring the accuracy of my grammar and perplexity. Their support has significantly enhanced the quality of my writing. I am grateful to ResearchGate for providing me with access to a wide range of research papers and articles, and to Google Scholar for guiding me to relevant journals. A special thank you to MyBib for simplifying the citation process and ensuring proper referencing of sources. Additionally, I want to acknowledge Overleaf for offering a robust platform for creating and formatting this report in LaTeX. Collectively, these tools and platforms have played a crucial role in the successful completion of this report.
 
 \newpage
-\section{References}
+\addcontentsline{toc}{section}{References}
 \vspace*{-35pt}
+\renewcommand{\refname}{References}
 \begin{thebibliography}{99}
-
-\bibitem{case_study}
-Cate Hutson. Why a Good Boss Likes It When People Complain.
 
 \bibitem{why_complaints}
 David Weil and Amanda Pyles. (2005-2006). Why Complain-Complaints, Compliance, and the Problem of Enforcement in the U.S. Workplace. \textit{27 Comp. Lab. L. and Pol'y. J. 59 }
@@ -153,10 +181,16 @@ Sewon Kim, Toby M. Egan, Woosung Kim, and Jaekyum Kim. (2013). The Impact of Man
 Amy Yeager \url{https://www.mtlc.co/how-team-leaders-can-transform-complaints-into-opportunities/}
 
 \bibitem{employee_manager}
-Melinda J. Moye, Alan B. Henkin. (2006). Exploring associations between employee empowerment and interpersonal trust in managers. 
+Melinda J. Moye, Alan B. Henkin. (2006). Exploring associations between employee empowerment and interpersonal trust in managers. \textit{Journal of Management Development} 
 
+\bibitem{opportunistic_complain}
+Melissa A. Baker, Vincent P. Magnini. (2011). Opportunistic complaining: Causes, consequences, and managerial alternatives. \url{https://doi.org/10.1016/j.ijhm.2011.06.004}
+
+\bibitem{complain_boss}
+Marie G. McIntyre. Should You Complain About Your Boss? \url{https://www.yourofficecoach.com/coaching-resources/managing-your-boss/managing-up/should-you-complain-about-your-boss} 
+
+\bibitem{benefits_complain}
+Complaining: The Surprising Benefits and How to Do It Right. \url{https://www.thefitmess.com/blog/complaining-the-surprising-benefits-and-how-to-do-it-right/}
 \end{thebibliography}
 
-Journal of Management Development
-\end{document}
 \end{document}
